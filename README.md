@@ -1,109 +1,111 @@
-# 🚀 Python Data Science & Automation Portfolio
+# Python Data Science & Automation Portfolio
 
-> A production-ready repository showcasing end-to-end Python projects spanning web scraping, data engineering, business intelligence, competitor analytics, and predictive machine learning.
+A collection of practical Python projects covering web scraping, data visualization, price monitoring, and predictive modeling.
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
-python-portfolio/
+python-book-scraper/
 │
-├── 01_catalog_scraper/        # Project A: Web Scraping Pipeline
-├── 02_sales_dashboard/        # Project B: Interactive BI Analytics Dashboard
-├── 03_price_tracker/          # Project C: Competitor Price Alert Engine
-├── 04_churn_predictor/        # Project D: ML Customer Churn Predictor
-├── screenshots/               # Visual outcomes & terminal execution logs
-├── data/                      # Output datasets (Excel, CSV)
-├── requirements.txt           # Environment dependencies
-└── README.md                  # Project documentation hub
+├── 01_catalog_scraper/        # Web Scraping Pipeline
+├── 02_sales_dashboard/        # BI Analytics Dashboard
+├── 03_price_tracker/          # Competitor Price Alert Engine
+├── 04_churn_predictor/        # Customer Churn ML Predictor
+├── screenshots/               # Project preview images
+├── data/                      # Exported output files
+├── requirements.txt           # Python dependencies
+└── README.md                  # Project documentation
 
-🛠️ Project Showcases
-1️⃣ Project A: Automated E-Commerce Catalog Scraper
-Folder: 01_catalog_scraper/
 
-Tech Stack: Python, BeautifulSoup4, requests, pandas, openpyxl
+Project Overview
+1. Automated E-Commerce Catalog Scraper
+Path: 01_catalog_scraper/
 
-Key Features:
+Tech Stack: Python, BeautifulSoup4, Requests, Pandas, OpenPyXL
 
-Multi-page web crawler with automated pagination navigation.
+Features:
 
-RegEx (re) text sanitization to clean raw price strings, currency symbols, and stock status.
+Multi-page web scraper handling dynamic pagination.
 
-Rate-limiting and error handling for reliable HTTP requests.
+Cleans raw price, currency, and stock strings using RegEx.
 
-Exports structured data directly into cleanly formatted Excel sheets (.xlsx).
+Implements rate-limiting and error handling to handle request limits safely.
 
-📊 Execution Outcome:
-2️⃣ Project B: Executive Sales & Revenue Analytics Dashboard
-Folder: 02_sales_dashboard/
+Exports structured datasets directly to Excel (.xlsx).
 
-Tech Stack: Python, Streamlit, Plotly Express, pandas
+Preview:
 
-Key Features:
+2. Sales & Revenue Analytics Dashboard
+Path: 02_sales_dashboard/
 
-Interactive Web UI built with Streamlit for real-time business metrics tracking.
+Tech Stack: Python, Streamlit, Plotly, Pandas
 
-High-level KPI summaries: Total Revenue, Units Sold, and Average Profit Margins.
+Features:
 
-Dynamic category performance visualizations and profit margin distribution charts powered by Plotly.
+Interactive web dashboard built with Streamlit.
 
-Category unit-share analysis via interactive donut breakdown.
+Tracks high-level KPIs including revenue, units sold, and profit margins.
 
-📊 Execution Outcome:
-3️⃣ Project C: Automated Competitor Price Tracker & Alert Engine
-Folder: 03_price_tracker/
+Plotly charts for sales distribution and category breakdowns.
 
-Tech Stack: Python, pandas, datetime
+Preview:
 
-Key Features:
+3. Competitor Price Tracker & Alert Engine
+Path: 03_price_tracker/
 
-Real-time variance engine measuring live competitor pricing against baseline target thresholds.
+Tech Stack: Python, Pandas, Datetime
 
-Automated log formatting tracking product status (NORMAL vs. ALERT BREACH).
+Features:
 
-Automated notification trigger system whenever prices fall below target deal levels.
+Monitors live competitor pricing against baseline target prices.
 
-Structured terminal audit logging for continuous data monitoring.
+Generates structured logs marking item statuses (NORMAL vs. ALERT BREACH).
 
-📊 Execution Outcome:
-4️⃣ Project D: Machine Learning Customer Churn Predictor
-Folder: 04_churn_predictor/
+Triggers notifications when prices drop below specified thresholds.
 
-Tech Stack: Python, scikit-learn, pandas, NumPy
+Preview:4. Customer Churn Machine Learning Predictor
+Path: 04_churn_predictor/
 
-Key Features:
+Tech Stack: Python, Scikit-Learn, Pandas, NumPy
 
-End-to-End ML Pipeline: Complete data preprocessing, feature encoding, train/test split, and model evaluation workflow.
+Features:
 
-Classifier Model: Built using a Random Forest Classifier trained to detect customer attrition patterns based on tenure length, monthly spend (Monthly_Charges_$), and customer service interaction history (Support_Calls).
+End-to-end ML workflow covering data preprocessing, feature encoding, and model evaluation.
 
-High Performance: Achieves 96.00% Test Accuracy on evaluation data.
+Uses a Random Forest Classifier to predict churn based on tenure, spend, and support ticket history.
 
-Actionable Risk Tagging: Generates real-time churn probability scores alongside instant visual risk indicators (HIGH RISK 🚨 vs. RETAINED ✅) for customer success teams.
+Achieves 96% accuracy on test data.
 
-📊 Execution Outcome:
-⚙️ Setup & Local Installation
+Outputs risk levels (HIGH RISK vs. RETAINED) with probability scores for customer success teams.
 
-1. clone repository
+Preview:
+
+Quickstart Guide
+
+
+Clone the repository:
 
 Bash
 git clone [https://github.com/rakshitarora2310-lpu/python-book-scraper.git](https://github.com/rakshitarora2310-lpu/python-book-scraper.git)
 cd python-book-scraper
 
 
-2.Set Up Virtual Environment:
+Set up virtual environment:
 
 PowerShell
 python -m venv venv
 .\venv\Scripts\Activate.ps1
 
- 
-3.Install Master Dependencies:
+
+Install dependencies:
+
 PowerShell
 pip install -r requirements.txt
 
-4.Run Any Module:
+
+Run any project:
 
 PowerShell
 python 01_catalog_scraper/main.py
