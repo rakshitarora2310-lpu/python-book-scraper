@@ -1,37 +1,16 @@
-# 📚 Automated E-Commerce Catalog Scraper
+# 🚀 Python Data Science & Automation Portfolio
 
-> A production-ready Python scraping pipeline designed to extract, clean, and export structured product catalog data into formatted Excel spreadsheets.
-
----
-
-## 💡 Overview
-
-This project automates data collection from pagination-enabled e-commerce catalogs. Built with resilience in mind, it handles session management, rate limiting, dynamic character cleaning (such as non-standard currency encoding), and converts unstructured HTML into clean tabular data.
-
-## ✨ Key Features
-
-* **Automated Pagination:** Dynamically detects and traverses multi-page product listings.
-* **Robust Data Sanitization:** Uses regular expressions (`re`) to clean currency symbols, extract numeric pricing, map star ratings, and normalize stock availability.
-* **Polite Scraping:** Implements rate-limiting delays and custom `User-Agent` headers to ensure respectful server interactions.
-* **Structured Data Export:** Outputs clean datasets directly into Excel (`.xlsx`) format using `pandas` and `openpyxl`.
-* **Logging & Error Resilience:** Employs explicit logging levels (`INFO`, `WARNING`, `ERROR`) to track pipeline progress and catch network exceptions gracefully.
+> A central repository showcasing production-ready Python projects built for data engineering, web scraping, analytics, machine learning, and automation.
 
 ---
 
-## 🛠️ Tech Stack
+## 📂 Repository Structure & Featured Projects
 
-* **Language:** Python 3.10+
-* **Web Scraping:** `BeautifulSoup4`, `requests`
-* **Data Processing & Export:** `pandas`, `openpyxl`
-* **Text Parsing:** `re` (Regular Expressions)
-
----
-
-## 🚀 Getting Started
-
-### 1. Installation & Setup
-
-Clone the repository:
-```bash
-git clone https://github.com/rakshitarora2310-lpu/python-book-scraper.git
-cd python-book-scraper
+```text
+python-portfolio/
+│
+├── 01_catalog_scraper/        # Project A: Web Scraping & Pipeline
+├── 02_sales_dashboard/        # Project B: Interactive Analytics Dashboard
+├── data/                      # Processed datasets & outputs
+├── requirements.txt           # Master project dependencies
+└── README.md                  # Showcase directory
